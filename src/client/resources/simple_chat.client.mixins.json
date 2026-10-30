@@ -5,7 +5,8 @@
   "client": [
     "ExampleClientMixin",
     "ChatHiddenMixin",
-    "ChatAnimationMixin"
+    "ChatAnimationMixin",
+    "ChatHeadsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
