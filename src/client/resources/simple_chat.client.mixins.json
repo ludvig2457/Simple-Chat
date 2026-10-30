@@ -3,10 +3,8 @@
   "package": "com.simple_chat.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ExampleClientMixin",
     "ChatHiddenMixin",
-    "ChatAnimationMixin",
-    "ChatHeadsMixin"
+    "EmojiMixin"
   ],
   "injectors": {
     "defaultRequire": 1
