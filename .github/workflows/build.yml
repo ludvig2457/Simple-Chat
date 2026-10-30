@@ -22,16 +22,20 @@ jobs:
           java-version: '25'
           distribution: 'microsoft'
 
-      - name: clean gradle cache
+      - name: hard clean gradle
         run: |
+          ./gradlew --stop || true
           rm -rf ~/.gradle/caches
           rm -rf ~/.gradle/wrapper
+          rm -rf ~/.gradle/daemon
+          rm -rf .gradle
+          rm -rf build
 
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
 
       - name: build
-        run: ./gradlew build
+        run: ./gradlew build --no-daemon --refresh-dependencies
 
       - name: capture build artifacts
         uses: actions/upload-artifact@v7
