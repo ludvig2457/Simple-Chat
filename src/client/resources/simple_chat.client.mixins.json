@@ -3,10 +3,10 @@
   "package": "com.simple_chat.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ExampleClientMixin"
+    "ExampleClientMixin",
+    "ChatHiddenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   }
-}
 }
